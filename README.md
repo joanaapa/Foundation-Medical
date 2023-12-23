@@ -1,29 +1,16 @@
 # Are Natural Domain Foundation Models Useful for Medical Image Classification?
 
-_**Accepted paper in the Winter Conference on Applications of Computer Vision (WACV) 2024**_
+Codebase for the paper [*"Are Natural Domain Foundation Models Useful for Medical Image Classification?"*](https://arxiv.org/abs/2310.19522). \
+_**Originally published at the Winter Conference on Applications of Computer Vision (WACV) 2024**_
 
-[Link to the paper](https://arxiv.org/abs/2310.19522)
+<p align="center">
+  <img width="45%" src="images/overall_comparison.png">
+</p>
 
+
+#### Abstract:
 The deep learning field is converging towards the use of general foundation models that can be easily adapted for diverse tasks. While this paradigm shift has become common practice within the field of natural language processing, progress has been slower in computer vision. In this paper we attempt to address this issue by investigating the transferability of various state-of-the-art foundation models to medical image classification tasks. Specifically, we evaluate the performance of five foundation models, namely SAM, SEEM, DINOv2, BLIP, and OPENCLIP across four well-established medical imaging datasets. We explore different training settings to fully harness the potential of these models. Our study shows mixed results. DINOv2 consistently outperforms the standard practice of IMAGENET pretraining. However, other foundation models failed to consistently beat this established baseline indicating limitations in their transferability to medical image classification tasks
-<div style="text-align: center;">
-  <img src="images/overall_comparison.png" width="500">
-</div>
 
-## Citation
-
-```bash
-@article{paleshuix2023natural,
-  title={Are Natural Domain Foundation Models Useful for Medical Image Classification?},
-  author={Pales Huix, Joana and 
-          Ganeshan, Adithya Raju and 
-          Haslum, Johan Fredin and 
-          Soderberg, Magnus and 
-          Matsoukas, Christos and 
-          Smith, Kevin},
-  journal={arXiv preprint arXiv:2310.19522},
-  year={2023}
-}
-```
 
 ## Enviroment setup
 To create a conda environment use the following command:\
@@ -57,3 +44,17 @@ Training example:\
 
 A flag can be added for testing:\
 ```python classification.py --params_path "./params.json" --test```
+
+
+## Citation
+To cite our work, please use the following BibTeX entry:
+
+```markdown
+@inproceedings{huix2024natural,
+  title={Are Natural Domain Foundation Models Useful for Medical Image Classification?},
+  author={Huix, Joana Pal{\'e}s and Ganeshan, Adithya Raju and Haslum, Johan Fredin and S{\"o}derberg, Magnus and Matsoukas, Christos and Smith, Kevin},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={7634--7643},
+  year={2024}
+}
+```
