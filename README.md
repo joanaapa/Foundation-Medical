@@ -47,7 +47,7 @@ A flag can be added for testing:\
 
 
 ## Citation
-To cite our work, please use the following BibTeX entry:
+To cite our work please use the following BibTeX entry:
 
 ```markdown
 @inproceedings{huix2024natural,
