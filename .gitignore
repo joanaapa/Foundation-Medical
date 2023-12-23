@@ -1,0 +1,13 @@
+**/__pycache__
+**/.ipynb_checkpoints
+*.ipynb
+**/checkpoints
+**/wandb
+**/models
+**/.wandb
+.idea/*
+*.out
+**/results
+*.pt
+/notebooks
+params_*.json
